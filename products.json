@@ -1,0 +1,93 @@
+[
+    {
+      "name": "milk",
+      "price": 15,
+      "description": "1L of cow milk",
+      "category": "dairy"
+    },
+    {
+      "name": "bread",
+      "price": 10,
+      "description": "500g of whole wheat bread",
+      "category": "bakery"
+    },
+    {
+      "name": "eggs",
+      "price": 12,
+      "description": "A dozen of organic eggs",
+      "category": "dairy"
+    },
+    {
+      "name": "apples",
+      "price": 5,
+      "description": "1kg of fresh apples",
+      "category": "fruits"
+    },
+    {
+      "name": "chicken breast",
+      "price": 25,
+      "description": "500g of skinless chicken breast",
+      "category": "meat"
+    },
+    {
+      "name": "rice",
+      "price": 8,
+      "description": "1kg of basmati rice",
+      "category": "grains"
+    },
+    {
+      "name": "cheese",
+      "price": 18,
+      "description": "200g of cheddar cheese",
+      "category": "dairy"
+    },
+    {
+      "name": "carrots",
+      "price": 4,
+      "description": "1kg of fresh carrots",
+      "category": "vegetables"
+    },
+    {
+      "name": "orange juice",
+      "price": 20,
+      "description": "1L of 100% orange juice",
+      "category": "beverages"
+    },
+    {
+      "name": "pasta",
+      "price": 6,
+      "description": "500g of whole grain pasta",
+      "category": "grains"
+    },
+    {
+      "name": "tomatoes",
+      "price": 7,
+      "description": "1kg of ripe tomatoes",
+      "category": "vegetables"
+    },
+    {
+      "name": "beef steak",
+      "price": 30,
+      "description": "300g of premium beef steak",
+      "category": "meat"
+    },
+    {
+      "name": "yogurt",
+      "price": 9,
+      "description": "500g of plain yogurt",
+      "category": "dairy"
+    },
+    {
+      "name": "bananas",
+      "price": 6,
+      "description": "1kg of fresh bananas",
+      "category": "fruits"
+    },
+    {
+      "name": "olive oil",
+      "price": 22,
+      "description": "500ml of extra virgin olive oil",
+      "category": "condiments"
+    }
+  ]
+  
