@@ -1,7 +1,12 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+
+# Enable CORS for all routes
+CORS(app)
 
 # Configurations for the database - sqlite
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///products.db'
@@ -11,13 +16,12 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 
-
 class Product(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     price = db.Column(db.Float, nullable=False)
     description = db.Column(db.String(200))
-    category = db.Column(db.String(100), nullable=False)
+    category = db.Column(db.Integer, nullable=False)
 
     def __repr__(self):
         return f'Product {self.id}'
@@ -78,7 +82,7 @@ def send_products():
     allProducts = Product.query.all()
     
     for product in allProducts:
-        list_to_send.append({'name' : product.name, 'price' : product.price, 'description' : product.description, 'category' : product.category})
+        list_to_send.append({'id': product.id, 'name' : product.name, 'price' : product.price, 'description' : product.description, 'category' : product.category})
     list_to_send   
 
     return list_to_send
